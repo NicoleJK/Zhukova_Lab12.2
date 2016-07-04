@@ -29,7 +29,7 @@ class TheSecondThread extends Thread{
         while ( TheFirstThread.isAlive()) {
             System.out.println("Идет обработка...");
             try {
-                Thread.sleep(1);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
